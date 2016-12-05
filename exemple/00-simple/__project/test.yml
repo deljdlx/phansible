@@ -1,0 +1,10 @@
+---
+# test
+
+- name: apply common configuration to all nodes
+  hosts: all
+  remote_user: vagrant
+  become: true
+  roles:
+    - defaultRequirements
+

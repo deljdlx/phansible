@@ -1,0 +1,11 @@
+{
+  "name": "Phansible",
+  "description": "PHP abstraction for Ansible",
+  "autoload": {
+    "psr-4": { "Phansible\\": ["../../source"] }
+  },
+  "require":
+  {
+    "symfony/yaml": "dev-master"
+  }
+}
