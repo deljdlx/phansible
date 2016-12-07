@@ -6,7 +6,7 @@ namespace Phansible;
 
 
 
-class Network
+class Group
 {
 
 

@@ -1,5 +1,8 @@
 <?php
 
+
+//ansible-playbook --private-key=/cygdrive/d/vm/vagrant/test-00/.vagrant/machines/default/virtualbox/private_key -u vagrant -i hosts test.yml
+
 require(__DIR__.'/vendor/autoload.php');
 
 
@@ -7,13 +10,15 @@ require(__DIR__.'/vendor/autoload.php');
 
 $project=new \Phansible\Project(__DIR__.'/__project');
 
-$project->createNetwork('web')
-	->addMachineByIP('192.168.1.94');
+$project->createGroup('web')
+	->addMachineByIP('192.168.1.94')
+	->addMachineByIP('192.168.1.33')
+;
 
 
 $roleDefaultRequirement=$project->createRole('defaultRequirements');
 
-$task=$roleDefaultRequirement->createTask('main');
+$task=$roleDefaultRequirement->createTask('main', '\Phansible\DebianTask');
 
 
 
@@ -27,19 +32,9 @@ $task->createBlock('Install Vim', array(
 
 
 
-$task->createBlock('Install wget', array(
-	'apt'=>array(
-		'name'=>'wget',
-		'state'=>'latest'
-	)
-));
-
-
-$task->createBlock('apt-upgrade', array(
-	'apt'=>array(
-		'upgrade'=>'dist'
-	)
-));
+$task->install('Install wget', 'wget');
+$task->install('Install git', 'git');
+$task->upgradeAll();
 
 
 

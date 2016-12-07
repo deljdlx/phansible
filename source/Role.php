@@ -18,8 +18,21 @@ class Role
 
 
 
-	public function createTask($name) {
-		$task=new Task();
+	public function createTask($name, $taskCast=null) {
+
+		if($taskCast) {
+			if(class_exists($taskCast)) {
+				$task=new $taskCast();
+			}
+			else {
+				throw new Exception('Class "'.$taskCast.'"" does not exist');
+			}
+		}
+		else {
+			$task=new Task();
+		}
+
+
 		$task->setName($name);
 		$this->tasks[$task->getName()]=$task;
 		return $task;
@@ -41,7 +54,11 @@ class Role
 
 	public function create($filepath) {
 
-		mkdir($filepath.'/tasks');
+
+		if(!is_dir($filepath.'/tasks')) {
+			mkdir($filepath.'/tasks');
+		}
+
 
 		foreach ($this->tasks as $task) {
 			$taskFileName=$filepath.'/tasks/'.$task->getName().'.yml';

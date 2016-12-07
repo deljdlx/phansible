@@ -14,7 +14,7 @@ class Project
 	protected $filepathRoot;
 
 	protected $playbooks=array();
-	protected $networks=array();
+	protected $groups=array();
 	protected $roles=array();
 
 
@@ -35,11 +35,11 @@ class Project
 
 
 
-	public function createNetwork($name) {
-		$network=new \Phansible\Network();
-		$network->setName($name);
-		$this->networks[$network->getName()]=$network;
-		return $network;
+	public function createGroup($name) {
+		$group=new \Phansible\Group();
+		$group->setName($name);
+		$this->groups[$group->getName()]=$group;
+		return $group;
 	}
 
 
@@ -87,19 +87,25 @@ ssh_args = -o ControlMaster=no
 
 
 		$buffer='';
-		foreach($this->networks as $network) {
-			$buffer.=$network->toString();
+		foreach($this->groups as $group) {
+			$buffer.=$group->toString();
 		}
 		file_put_contents($filepath.'/hosts', $buffer);
 
 
 		$roleFilepathRoot=$filepath.'/roles';
 
-		mkdir($roleFilepathRoot);
+		if(!is_dir($roleFilepathRoot)) {
+			mkdir($roleFilepathRoot);
+		}
+
 
 		foreach ($this->roles as $role) {
 			$roleFilepath=$roleFilepathRoot.'/'.$role->getName();
-			mkdir($roleFilepath);
+
+			if(!is_dir($roleFilepath)) {
+				mkdir($roleFilepath);
+			}
 			$role->create($roleFilepath);
 		}
 
