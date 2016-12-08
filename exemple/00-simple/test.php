@@ -35,6 +35,9 @@ $task->createBlock('Install Vim', array(
 
 $task->install('Install wget', 'wget');
 $task->install('Install git', 'git');
+
+$task->install('Install MariaDB', 'mariadb-server');
+
 $task->upgradeAll();
 
 

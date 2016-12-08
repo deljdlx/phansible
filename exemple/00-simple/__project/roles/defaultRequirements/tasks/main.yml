@@ -14,6 +14,11 @@
       name: git
       state: latest
 
+- name: Install MariaDB
+  apt:
+      name: mariadb-server
+      state: latest
+
 - name: apt-upgrade
   apt:
       upgrade: dist

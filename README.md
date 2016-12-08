@@ -1,2 +1,2 @@
 # phansible
-PHP abstraction for ansible
+PHP abstraction for Ansible
