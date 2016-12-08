@@ -11,17 +11,14 @@ require(__DIR__.'/vendor/autoload.php');
 $project=new \Phansible\Project(__DIR__.'/__project');
 
 $project->createGroup('web')
-    ->addMachineByIP('172.19.16.178')
+    ->addMachineByIP('192.168.180.150')
 	//->addMachineByIP('192.168.1.94')
 	//->addMachineByIP('192.168.1.33')
 ;
 
 
 $roleDefaultRequirement=$project->createRole('defaultRequirements');
-
 $task=$roleDefaultRequirement->createTask('main', '\Phansible\DebianTask');
-
-
 
 
 $task->createBlock('Install Vim', array(
@@ -31,14 +28,16 @@ $task->createBlock('Install Vim', array(
 	)
 ));
 
-
-
 $task->install('Install wget', 'wget');
 $task->install('Install git', 'git');
 
-$task->install('Install MariaDB', 'mariadb-server');
-
 $task->upgradeAll();
+
+
+
+$roleBDD=$project->createRole('bdd');
+$bddTask=$roleBDD->createTask('main', '\Phansible\DebianTask');
+$bddTask->install('Install MariaDB', 'mariadb-server');
 
 
 
@@ -47,7 +46,8 @@ $task->upgradeAll();
 $playbook=$project->createPlaybook('test');
 
 $playbook->createRecipe('default configuration')
-	->addRole($roleDefaultRequirement);
+	->addRole($roleDefaultRequirement)
+    ->addRole($roleBDD)
 ;
 
 

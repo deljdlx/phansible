@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb200bf-88eb-42c1-aca5-b345729bb926" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/action_provision" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_provision" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/action_set_name" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_set_name" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/creator_uid" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/creator_uid" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/id" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/id" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/index_uuid" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/index_uuid" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/private_key" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/private_key" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/.vagrant/machines/default/virtualbox/synced_folders" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/synced_folders" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/Vagrantfile" afterPath="$PROJECT_DIR$/script/vagrant/Vagrantfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/ansible-install.sh" afterPath="$PROJECT_DIR$/script/ansible/install.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/vagrant-initialize.php" afterPath="$PROJECT_DIR$/script/vagrant/vagrant-initialize" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/hosts" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/hosts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.retry" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/test.retry" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/test.php" afterPath="$PROJECT_DIR$/exemple/00-simple/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phansible.iws" />
@@ -49,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hosts" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hosts" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128">
+            <state line="1" column="140" selection-start="143" selection-end="143" vertical-scroll-proportion="0.014638609" vertical-offset="0" max-vertical-offset="1093">
               <folding />
             </state>
           </provider>
@@ -79,16 +69,16 @@
       <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="49" selection-start="776" selection-end="776" vertical-scroll-proportion="-24.32" vertical-offset="0" max-vertical-offset="1056">
+            <state line="58" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="-37.12" vertical-offset="0" max-vertical-offset="1056">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/ansible/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="0.029962547" vertical-offset="0" max-vertical-offset="1068">
+            <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.28" vertical-offset="0" max-vertical-offset="128">
               <folding />
             </state>
           </provider>
@@ -290,7 +280,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1016" y="201" width="1503" height="1211" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -298,7 +288,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.284052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.284052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -486,20 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Machine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Recipe.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -514,16 +490,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
+    <entry file="file://$PROJECT_DIR$/script/ansible/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="49" selection-start="776" selection-end="776" vertical-scroll-proportion="-24.32" vertical-offset="0" max-vertical-offset="1056">
+        <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.28" vertical-offset="0" max-vertical-offset="128">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/ansible/install.sh">
+    <entry file="file://$PROJECT_DIR$/source/Machine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="0.029962547" vertical-offset="0" max-vertical-offset="1068">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="-37.12" vertical-offset="0" max-vertical-offset="1056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="140" selection-start="143" selection-end="143" vertical-scroll-proportion="0.014638609" vertical-offset="0" max-vertical-offset="1093">
           <folding />
         </state>
       </provider>
