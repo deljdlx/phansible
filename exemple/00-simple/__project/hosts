@@ -1,3 +1,2 @@
 [web]
-192.168.1.94
-192.168.1.33
+192.168.180.150		ansible_ssh_private_key_file=/Users/Julien/www/phansible/script/.vagrant/machines/default/virtualbox/private_key

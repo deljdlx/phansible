@@ -11,8 +11,9 @@ require(__DIR__.'/vendor/autoload.php');
 $project=new \Phansible\Project(__DIR__.'/__project');
 
 $project->createGroup('web')
-	->addMachineByIP('192.168.1.94')
-	->addMachineByIP('192.168.1.33')
+    ->addMachineByIP('172.19.16.178')
+	//->addMachineByIP('192.168.1.94')
+	//->addMachineByIP('192.168.1.33')
 ;
 
 
