@@ -13,15 +13,15 @@ class Task
 	protected $name;
 
 
-	protected $blocks=array();
+	protected $actions=array();
 
 
 
 
 
 
-	public function createBlock($name, $content) {
-		$item=new TaskBlock($name, $content);
+	public function createAction($name, $content) {
+		$item=new Action($name, $content);
 		$this->task[]=$item;
 		return $item;
 	}
@@ -42,8 +42,8 @@ class Task
 
 	public function create($filepath) {
 		$buffer='---'."\n";
-		foreach ($this->task as $block) {
-			$buffer.=$block->toString()."\n";
+		foreach ($this->actions as $action) {
+			$buffer.=$action->toString()."\n";
 		}
 
 

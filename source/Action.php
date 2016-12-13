@@ -6,7 +6,7 @@ namespace Phansible;
 
 use Symfony\Component\Yaml\Yaml;
 
-class TaskBlock
+class Action
 {
 
 

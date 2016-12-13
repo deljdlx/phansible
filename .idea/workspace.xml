@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb200bf-88eb-42c1-aca5-b345729bb926" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.retry" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/test.retry" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/DebianTask.php" afterPath="$PROJECT_DIR$/source/Debian/Task.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/TaskBlock.php" afterPath="$PROJECT_DIR$/source/Action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Group.php" afterPath="$PROJECT_DIR$/source/Group.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Machine.php" afterPath="$PROJECT_DIR$/source/Machine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Task.php" afterPath="$PROJECT_DIR$/source/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/hosts" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/hosts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/bdd/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/bdd/tasks/main.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/test.php" afterPath="$PROJECT_DIR$/exemple/00-simple/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phansible.iws" />
@@ -30,19 +35,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Machine.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Machine.php">
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="640">
+            <state line="14" column="118" selection-start="439" selection-end="439" vertical-scroll-proportion="-8.96" vertical-offset="0" max-vertical-offset="1120">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hosts" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ig.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exemple/00-simple/ig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="682" selection-end="682" vertical-scroll-proportion="0.315197" vertical-offset="0" max-vertical-offset="1066">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="12" selection-start="77" selection-end="77" vertical-scroll-proportion="-2.96" vertical-offset="54" max-vertical-offset="1120">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hosts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="140" selection-start="143" selection-end="143" vertical-scroll-proportion="0.014638609" vertical-offset="0" max-vertical-offset="1093">
+            <state line="2" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Task.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="28" selection-start="485" selection-end="485" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -66,24 +98,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="-37.12" vertical-offset="0" max-vertical-offset="1056">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/ansible/install.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.28" vertical-offset="0" max-vertical-offset="128">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,16 +113,16 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="60" selection-start="1321" selection-end="1321" vertical-scroll-proportion="-10.444445" vertical-offset="166" max-vertical-offset="1264">
+            <state line="14" column="29" selection-start="640" selection-end="640" vertical-scroll-proportion="-2.148148" vertical-offset="166" max-vertical-offset="1264">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DebianTask.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/DebianTask.php">
+      <file leaf-file-name="Task.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="47" selection-start="172" selection-end="172" vertical-scroll-proportion="-8.96" vertical-offset="0" max-vertical-offset="656">
+            <state line="12" column="65" selection-start="141" selection-end="141" vertical-scroll-proportion="-7.68" vertical-offset="0" max-vertical-offset="656">
               <folding />
             </state>
           </provider>
@@ -132,8 +146,15 @@
         <option value="$PROJECT_DIR$/script/ansible-install.sh" />
         <option value="$PROJECT_DIR$/script/Vagrantfile" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/exemple/00-simple/test.php" />
+        <option value="$PROJECT_DIR$/source/Debian/Debian.php" />
         <option value="$PROJECT_DIR$/exemple/00-simple/__project/hosts" />
+        <option value="$PROJECT_DIR$/source/Group.php" />
+        <option value="$PROJECT_DIR$/source/Action.php" />
+        <option value="$PROJECT_DIR$/source/Task.php" />
+        <option value="$PROJECT_DIR$/source/Debian/Task.php" />
+        <option value="$PROJECT_DIR$/source/Machine.php" />
+        <option value="$PROJECT_DIR$/exemple/00-simple/test.php" />
+        <option value="$PROJECT_DIR$/exemple/00-simple/ig.php" />
       </list>
     </option>
   </component>
@@ -147,9 +168,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1016" />
-    <option name="y" value="201" />
-    <option name="width" value="1503" />
+    <option name="x" value="1070" />
+    <option name="y" value="241" />
+    <option name="width" value="2124" />
     <option name="height" value="1211" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -221,7 +242,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
+              <option name="myItemId" value="exemple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="00-simple" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,6 +269,7 @@
       <recent name="E:\shared\var\www\project\phansible\exemple\00-simple\source" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/Debian" />
       <recent name="$PROJECT_DIR$/script/ansible" />
       <recent name="$PROJECT_DIR$/script/vagrant" />
       <recent name="$PROJECT_DIR$" />
@@ -279,7 +305,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1016" y="201" width="1503" height="1211" extended-state="0" />
+    <frame x="1070" y="241" width="2124" height="1211" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -288,7 +314,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.284052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19932757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -376,7 +402,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/DebianTask.php">
+    <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
           <folding />
@@ -400,31 +426,12 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/TaskBlock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Playbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
@@ -441,23 +448,6 @@
     <entry file="file://$PROJECT_DIR$/source/Role.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/DebianTask.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="47" selection-start="172" selection-end="172" vertical-scroll-proportion="-8.96" vertical-offset="0" max-vertical-offset="656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/vagrant/Vagrantfile">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="60" selection-start="1321" selection-end="1321" vertical-scroll-proportion="-10.444445" vertical-offset="166" max-vertical-offset="1264">
           <folding />
         </state>
       </provider>
@@ -492,28 +482,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/ansible/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.28" vertical-offset="0" max-vertical-offset="128">
+        <state line="2" column="31" selection-start="86" selection-end="86" vertical-scroll-proportion="0.029962547" vertical-offset="0" max-vertical-offset="1068">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Machine.php">
+    <entry file="file://$PROJECT_DIR$/script/vagrant/Vagrantfile">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="14" column="29" selection-start="640" selection-end="640" vertical-scroll-proportion="-2.148148" vertical-offset="166" max-vertical-offset="1264">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
+    <entry file="file://$PROJECT_DIR$/source/Group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="-37.12" vertical-offset="0" max-vertical-offset="1056">
+        <state line="15" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="28" selection-start="485" selection-end="485" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="65" selection-start="141" selection-end="141" vertical-scroll-proportion="-7.68" vertical-offset="0" max-vertical-offset="656">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="140" selection-start="143" selection-end="143" vertical-scroll-proportion="0.014638609" vertical-offset="0" max-vertical-offset="1093">
+        <state line="2" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="12" selection-start="77" selection-end="77" vertical-scroll-proportion="-2.96" vertical-offset="54" max-vertical-offset="1120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Machine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="33" selection-start="324" selection-end="337" vertical-scroll-proportion="-17.28" vertical-offset="0" max-vertical-offset="1120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="118" selection-start="439" selection-end="439" vertical-scroll-proportion="-8.96" vertical-offset="0" max-vertical-offset="1120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/ig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="682" selection-end="682" vertical-scroll-proportion="0.315197" vertical-offset="0" max-vertical-offset="1066">
           <folding />
         </state>
       </provider>

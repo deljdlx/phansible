@@ -21,7 +21,7 @@ class Group
 		$machine->setIP($ip);
 
 		$this->machines[]=$machine;
-		return $this;
+		return $machine;
 	}
 
 

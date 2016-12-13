@@ -1,18 +1,18 @@
 <?php
 
 
-namespace Phansible;
+namespace Phansible\Debian;
 
 
 
 
-class DebianTask extends Task
+class Task extends \Phansible\Task
 {
 
 
 	public function install($name, $package, $version='latest') {
 
-		return $this->createBlock($name, array(
+		return $this->createAction($name, array(
 			'apt'=>array(
 				'name'=>$package,
 				'state'=>$version
@@ -22,7 +22,7 @@ class DebianTask extends Task
 
 	public function upgradeAll() {
 
-		$this->createBlock('apt-upgrade', array(
+		$this->createAction('apt-upgrade', array(
 			'apt'=>array(
 				'upgrade'=>'dist'
 			)
