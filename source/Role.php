@@ -15,6 +15,10 @@ class Role
 
 
 
+    public function __construct($name) {
+        $this->setName($name);
+    }
+
 
 
 

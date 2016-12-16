@@ -44,11 +44,15 @@ class Project
 
 
 	public function createRole($name) {
-		$role=new \Phansible\Role();
-		$role->setName($name);
-		$this->roles[$role->getName()]=$role;
+		$role=new \Phansible\Role($name);
+		$this->addRole($role);
 		return $role;
 	}
+
+    public function addRole($role) {
+        $this->roles[$role->getName()]=$role;
+        return $this;
+    }
 
 
 

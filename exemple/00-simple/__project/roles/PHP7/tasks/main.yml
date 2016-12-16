@@ -1,0 +1,15 @@
+---
+- name: Add repo for PHP7
+  apt_repository: repo="deb http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present
+- name: Add apt key for Debian
+  apt_key: url=https://www.dotdeb.org/dotdeb.gpg state=present
+- name: Update apt
+  become: true
+  apt: update_cache=yes
+
+- name: Install PHP7
+  become: true
+  apt:
+      name: php7.0-fpm
+      state: latest
+

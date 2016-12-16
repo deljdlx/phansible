@@ -1,1 +1,7 @@
 ---
+- name: Install MariaDB
+  become: true
+  apt:
+      name: mariadb-server
+      state: latest
+

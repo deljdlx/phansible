@@ -12,9 +12,11 @@ class Action
 
 	protected $name;
 	protected $content='';
+    protected $become=false;
 
 
-	public function __construct($name=null, $content=null) {
+	public function __construct($name=null, $content=null, $become=false) {
+        $this->become=$become;
 		if($name) {
 			$this->setName($name);
 		}
@@ -38,6 +40,11 @@ class Action
 	}
 
 
+    public function become() {
+        $this->become=true;
+    }
+
+
 
 
 	public function setName($name) {
@@ -53,6 +60,9 @@ class Action
 
 	public function toString() {
 		$buffer='- name: '.$this->getName()."\n";
+        if($this->become) {
+            $buffer.="  become: true\n";
+        }
 
 		$content = Yaml::dump($this->content);
 

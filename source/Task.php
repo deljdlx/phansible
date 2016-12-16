@@ -20,11 +20,17 @@ class Task
 
 
 
-	public function createAction($name, $content) {
-		$item=new Action($name, $content);
-		$this->task[]=$item;
+	public function createAction($name, $content, $become=false) {
+		$item=new Action($name, $content, $become);
+		$this->actions[]=$item;
 		return $item;
 	}
+
+    public function createRawAction($name, $content, $become=false) {
+        $item=new RawAction($name, $content, $become);
+        $this->actions[]=$item;
+        return $item;
+    }
 
 
 

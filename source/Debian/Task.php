@@ -17,7 +17,7 @@ class Task extends \Phansible\Task
 				'name'=>$package,
 				'state'=>$version
 			)
-		));
+		), true);
 	}
 
 	public function upgradeAll() {
