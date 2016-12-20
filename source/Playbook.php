@@ -17,9 +17,17 @@ class Playbook
 
 
 
-	public function __construct() {
-
+	public function __construct($name=null) {
+        if($name) {
+            $this->setName($name);
+        }
 	}
+
+
+
+    public function getRecipes() {
+        return $this->recipes;
+    }
 
 
 	public function setName($name) {

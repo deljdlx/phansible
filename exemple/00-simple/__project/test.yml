@@ -1,12 +1,12 @@
 ---
 # test
 
-- name: apply common configuration to all nodes
+- name: default configuration
   hosts: all
   remote_user: vagrant
   become: true
   roles:
     - Essential
     - PHP7
-    - bdd
+    - BDD
 

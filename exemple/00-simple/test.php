@@ -19,6 +19,33 @@ $project->createGroup('web')
 
 
 
+
+
+$playbook=new \Phansible\Debian\PlayBook\LAMP();
+
+$playbook->createRecipe('default configuration')
+    ->addRole($essentialRole)
+    ->addRole($rolePHP7)
+    ->addRole($roleBDD)
+;
+
+
+$project->addPlayBook($playbook);
+
+$project->create();
+
+
+
+
+
+
+
+die('EXIT '.__FILE__.'@'.__LINE__);
+
+
+
+
+
 $essentialRole=new \Phansible\Debian\Role\Essential();
 $project->addRole($essentialRole);
 /*
@@ -78,10 +105,14 @@ $task->install('Install PHP7', 'php7.0-fpm');
 
 
 
-
+/*
 $roleBDD=$project->createRole('bdd');
 $bddTask=$roleBDD->createTask('main', '\Phansible\Debian\Task');
 $bddTask->install('Install MariaDB', 'mariadb-server');
+*/
+
+$roleBDD=new \Phansible\Debian\Role\BDD();
+$project->addRole($roleBDD);
 
 
 

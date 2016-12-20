@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb200bf-88eb-42c1-aca5-b345729bb926" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_provision" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_provision" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_set_name" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_set_name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/id" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/index_uuid" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/index_uuid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/private_key" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/private_key" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/synced_folders" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/synced_folders" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Action.php" afterPath="$PROJECT_DIR$/source/Action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Playbook.php" afterPath="$PROJECT_DIR$/source/Playbook.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Project.php" afterPath="$PROJECT_DIR$/source/Project.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Role.php" afterPath="$PROJECT_DIR$/source/Role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Task.php" afterPath="$PROJECT_DIR$/source/Task.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/Task.php" afterPath="$PROJECT_DIR$/source/Debian/Task.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/bdd/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/bdd/tasks/main.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Recipe.php" afterPath="$PROJECT_DIR$/source/Recipe.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/test.php" afterPath="$PROJECT_DIR$/exemple/00-simple/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -41,19 +31,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.30018762" vertical-offset="0" max-vertical-offset="1776">
+            <state line="32" column="21" selection-start="711" selection-end="722" vertical-scroll-proportion="-20.48" vertical-offset="0" max-vertical-offset="2272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Essential.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Debian/Role/Essential.php">
+      <file leaf-file-name="LAMP.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Debian/PlayBook/LAMP.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="624">
+            <state line="13" column="32" selection-start="125" selection-end="125" vertical-scroll-proportion="-8.32" vertical-offset="0" max-vertical-offset="656">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="38" selection-start="590" selection-end="600" vertical-scroll-proportion="-17.92" vertical-offset="144" max-vertical-offset="2224">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Playbook.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Playbook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="0.34803003" vertical-offset="77" max-vertical-offset="1392">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipe.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Recipe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="9" selection-start="904" selection-end="904" vertical-scroll-proportion="-22.16" vertical-offset="502" max-vertical-offset="1568">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BDD.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Debian/Role/BDD.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="69" selection-start="245" selection-end="245" vertical-scroll-proportion="-10.24" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -62,7 +88,25 @@
       <file leaf-file-name="PHP7.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="0" selection-end="832" vertical-scroll-proportion="-5.12" vertical-offset="0" max-vertical-offset="672">
+            <state line="24" column="37" selection-start="558" selection-end="558" vertical-scroll-proportion="-15.36" vertical-offset="0" max-vertical-offset="672">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/test.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Machine.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Machine.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="1120">
               <folding />
             </state>
           </provider>
@@ -72,60 +116,6 @@
         <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="6" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="33" selection-start="224" selection-end="224" vertical-scroll-proportion="-10.24" vertical-offset="0" max-vertical-offset="656">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Task.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="34" selection-start="751" selection-end="751" vertical-scroll-proportion="-35.2" vertical-offset="0" max-vertical-offset="1056">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Recipe.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="-28.16" vertical-offset="0" max-vertical-offset="1568">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Project.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-19.84" vertical-offset="256" max-vertical-offset="2112">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Role.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Role.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="167" selection-end="167" vertical-scroll-proportion="-11.52" vertical-offset="0" max-vertical-offset="1392">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="128">
               <folding />
             </state>
           </provider>
@@ -161,10 +151,14 @@
         <option value="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" />
         <option value="$PROJECT_DIR$/source/Debian/Task/InstallPHP7.php" />
         <option value="$PROJECT_DIR$/source/Debian/Role/PHP7.php" />
-        <option value="$PROJECT_DIR$/source/Project.php" />
         <option value="$PROJECT_DIR$/source/Role.php" />
         <option value="$PROJECT_DIR$/source/Debian/Role/Essential.php" />
+        <option value="$PROJECT_DIR$/source/Debian/Role/BDD.php" />
+        <option value="$PROJECT_DIR$/source/Recipe.php" />
+        <option value="$PROJECT_DIR$/source/Debian/PlayBook/LAMP.php" />
         <option value="$PROJECT_DIR$/exemple/00-simple/test.php" />
+        <option value="$PROJECT_DIR$/source/Project.php" />
+        <option value="$PROJECT_DIR$/source/Playbook.php" />
       </list>
     </option>
   </component>
@@ -175,8 +169,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="720" />
-    <option name="y" value="180" />
+    <option name="x" value="671" />
+    <option name="y" value="91" />
     <option name="width" value="2124" />
     <option name="height" value="1211" />
   </component>
@@ -249,73 +243,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Debian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phansible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phansible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Debian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Role" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phansible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phansible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exemple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="00-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phansible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phansible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exemple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="00-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="__project" />
+              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,7 +304,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="720" y="180" width="2124" height="1211" extended-state="0" />
+    <frame x="671" y="91" width="2124" height="1211" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -385,7 +313,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24975985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2012488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2012488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -575,13 +503,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Playbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/vagrant/vagrant-initialize">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="32" selection-start="77" selection-end="77" vertical-scroll-proportion="-1.28" vertical-offset="0" max-vertical-offset="128" />
@@ -605,20 +526,6 @@
     <entry file="file://$PROJECT_DIR$/source/Group.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Machine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="324" selection-end="337" vertical-scroll-proportion="-17.28" vertical-offset="0" max-vertical-offset="1120">
           <folding />
         </state>
       </provider>
@@ -665,44 +572,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Recipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="-28.16" vertical-offset="0" max-vertical-offset="1568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/RawAction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.26966292" vertical-offset="0" max-vertical-offset="1068">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="224" selection-end="224" vertical-scroll-proportion="-10.24" vertical-offset="0" max-vertical-offset="656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="162" selection-end="162" vertical-scroll-proportion="0.14638609" vertical-offset="0" max-vertical-offset="1093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-19.84" vertical-offset="256" max-vertical-offset="2112">
           <folding />
         </state>
       </provider>
@@ -714,23 +586,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
+    <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="0" selection-end="832" vertical-scroll-proportion="-5.12" vertical-offset="0" max-vertical-offset="672">
+        <state line="16" column="33" selection-start="0" selection-end="404" vertical-scroll-proportion="0.2401501" vertical-offset="0" max-vertical-offset="1066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="448">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Debian/Role/Essential.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="624">
+        <state line="25" column="0" selection-start="0" selection-end="614" vertical-scroll-proportion="0.3752345" vertical-offset="0" max-vertical-offset="1066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Machine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="1120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Role/BDD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="69" selection-start="245" selection-end="245" vertical-scroll-proportion="-10.24" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.029330889" vertical-offset="0" max-vertical-offset="1091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="37" selection-start="558" selection-end="558" vertical-scroll-proportion="-15.36" vertical-offset="0" max-vertical-offset="672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Recipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="9" selection-start="904" selection-end="904" vertical-scroll-proportion="-22.16" vertical-offset="502" max-vertical-offset="1568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/PlayBook/LAMP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="32" selection-start="125" selection-end="125" vertical-scroll-proportion="-8.32" vertical-offset="0" max-vertical-offset="656">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exemple/00-simple/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.30018762" vertical-offset="0" max-vertical-offset="1776">
+        <state line="32" column="21" selection-start="711" selection-end="722" vertical-scroll-proportion="-20.48" vertical-offset="0" max-vertical-offset="2272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="38" selection-start="590" selection-end="600" vertical-scroll-proportion="-17.92" vertical-offset="144" max-vertical-offset="2224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Playbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="0.34803003" vertical-offset="77" max-vertical-offset="1392">
           <folding />
         </state>
       </provider>

@@ -69,7 +69,7 @@ class Recipe
 
 
 		$buffer='
-- name: apply common configuration to all nodes
+- name: '.$this->getName().'
   hosts: all
   remote_user: '.$remoteUser.'
   become: '.$become.'

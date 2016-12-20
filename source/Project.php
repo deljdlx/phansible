@@ -26,13 +26,20 @@ class Project
 
 
 	public function createPlaybook($name) {
-		$playbook=new \Phansible\Playbook();
-		$playbook->setName($name);
+		$playbook=new \Phansible\Playbook($name);
 		$this->playbooks[$playbook->getName()]=$playbook;
-
 		return $playbook;
 	}
 
+
+    public function addPlayBook(Playbook $playbook) {
+        $this->playbooks[$playbook->getName()]=$playbook;
+
+        $recipes=$playbook->getRecipes();
+
+
+        return $this;
+    }
 
 
 	public function createGroup($name) {
