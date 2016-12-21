@@ -5,9 +5,3 @@
       name: apache2
       state: latest
 
-- copy:
-    src: toto.txt
-    dest: /var/www/html/toto.php
-    owner: root
-    group: root
-    mode: 0644
