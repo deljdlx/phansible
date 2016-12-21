@@ -17,6 +17,9 @@ class Essential extends Role
         $roleDefaultRequirement=$this;
         $task=$roleDefaultRequirement->createTask('main', '\Phansible\Debian\Task');
 
+	    $task->updateAll();
+	    $task->upgradeAll();
+
         $task->createAction('Install Vim', array(
             'apt'=>array(
                 'name'=>'vim',
@@ -26,7 +29,12 @@ class Essential extends Role
 
         $task->install('Install wget', 'wget');
         $task->install('Install git', 'git');
-        $task->upgradeAll();
+
+
+
+
+
+
     }
 }
 

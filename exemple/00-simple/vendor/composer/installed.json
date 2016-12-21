@@ -6,12 +6,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
-            "reference": "7ad84777f7e3e88450049dd5b5ae08e4fd1023d0"
+            "reference": "f8c054eea2921142bed49cc957260652f80958e3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/7ad84777f7e3e88450049dd5b5ae08e4fd1023d0",
-            "reference": "7ad84777f7e3e88450049dd5b5ae08e4fd1023d0",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/f8c054eea2921142bed49cc957260652f80958e3",
+            "reference": "f8c054eea2921142bed49cc957260652f80958e3",
             "shasum": ""
         },
         "require": {
@@ -23,7 +23,7 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2016-12-08 15:31:48",
+        "time": "2016-12-13 09:39:51",
         "type": "library",
         "extra": {
             "branch-alias": {

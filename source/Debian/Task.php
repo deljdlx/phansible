@@ -27,7 +27,16 @@ class Task extends \Phansible\Task
 				'upgrade'=>'dist'
 			)
 		));
+	}
 
+
+	public function updateAll() {
+
+		$this->createAction('apt-update', array(
+			'apt'=>array(
+				'update_cache'=>'yes'
+			)
+		));
 	}
 
 

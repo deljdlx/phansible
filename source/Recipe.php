@@ -54,6 +54,10 @@ class Recipe
 		return $this;
 	}
 
+	public function getRoles() {
+		return $this->roles;
+	}
+
 
 
 	public function toString() {

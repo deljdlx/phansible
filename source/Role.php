@@ -21,6 +21,15 @@ class Role
 
 
 
+    public function getTask($taskName) {
+    	if(isset($this->tasks[$taskName])) {
+    		return $this->tasks[$taskName];
+	    }
+	    else {
+	    	throw new Exception('No task with name "'.$taskName.'" in role "'.$this->getName().'"');
+	    }
+    }
+
 
 	public function createTask($name, $taskCast=null) {
 

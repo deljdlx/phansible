@@ -1,4 +1,12 @@
 ---
+- name: apt-update
+  apt:
+      update_cache: 'yes'
+
+- name: apt-upgrade
+  apt:
+      upgrade: dist
+
 - name: Install Vim
   apt:
       name: vim
@@ -15,8 +23,4 @@
   apt:
       name: git
       state: latest
-
-- name: apt-upgrade
-  apt:
-      upgrade: dist
 

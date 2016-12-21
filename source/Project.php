@@ -38,7 +38,16 @@ class Project
         $recipes=$playbook->getRecipes();
 
 
-        return $this;
+	    foreach ($recipes as $recipe) {
+			$roles=$recipe->getRoles();
+		    foreach ($roles as $roleName=>$role) {
+			    $this->addRole($role);
+		    }
+
+	    }
+
+
+	    return $this;
     }
 
 

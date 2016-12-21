@@ -1,2 +1,2 @@
 [web]
-192.168.180.150	ansible_ssh_private_key_file=/Users/Julien/www/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key 
+192.168.1.89	ansible_ssh_private_key_file=/cygdrive/e/shared/var/www/project/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key 
