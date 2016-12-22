@@ -11,10 +11,13 @@ require(__DIR__.'/vendor/autoload.php');
 $project=new \Phansible\Project(__DIR__.'/__project');
 
 $project->createGroup('web')
-    ->addMachineByIP('192.168.1.89')
-        //->setSSHKeyFile('/Users/Julien/www/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key')
 
-        ->setSSHKeyFile('/cygdrive/e/shared/var/www/project/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key')
+
+    ->addMachineByIP('192.168.180.150')
+        ->setSSHKeyFile('/Users/Julien/www/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key')
+
+    //->addMachineByIP('192.168.1.89')
+        //->setSSHKeyFile('/cygdrive/e/shared/var/www/project/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key')
 
 	//->addMachineByIP('192.168.1.94')
 	//->addMachineByIP('192.168.1.33')
@@ -25,6 +28,8 @@ $project->createGroup('web')
 
 
 $playbook=new \Phansible\Debian\PlayBook\LAMP();
+
+
 
 /*
 $playbook->createRecipe('default configuration')
