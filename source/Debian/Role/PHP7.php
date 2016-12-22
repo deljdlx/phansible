@@ -18,12 +18,14 @@ class PHP7 extends Role
         $task=$rolePHP7->createTask('main', '\Phansible\Debian\Task');
         $task->createRawAction(
             'Add repo for PHP7',
-            'apt_repository: repo="deb http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present',
+            '- name: Add repo for PHP7'."\n".
+            '  apt_repository: repo="deb http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present',
             true
         );
         $task->createRawAction(
             'Add apt key for Debian',
-            'apt_key: url=https://www.dotdeb.org/dotdeb.gpg state=present',
+	        '- name: Add apt key for Debian'."\n".
+            '  apt_key: url=https://www.dotdeb.org/dotdeb.gpg state=present',
             true
         );
 

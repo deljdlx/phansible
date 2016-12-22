@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb200bf-88eb-42c1-aca5-b345729bb926" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/toto.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Debian/Role/Apache2.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Essential/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/bdd/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.retry" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/test.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_provision" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_set_name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/creator_uid" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/index_uuid" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/private_key" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/synced_folders" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/composer.phar" afterPath="$PROJECT_DIR$/exemple/00-simple/composer.phar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/vendor/symfony/yaml" afterPath="$PROJECT_DIR$/exemple/00-simple/vendor/symfony/yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Julien.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Julien.xml" />
@@ -31,7 +14,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/LAMP.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/LAMP.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/hosts" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/hosts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/toto.txt" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/toto.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/BDD/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/BDD/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Essential/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/Essential/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7ModApache/tasks/main.yml" afterPath="$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7ModApache/tasks/main.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/composer.json" afterPath="$PROJECT_DIR$/exemple/00-simple/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/composer.lock" afterPath="$PROJECT_DIR$/exemple/00-simple/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/source/Project.php" afterPath="$PROJECT_DIR$/exemple/00-simple/source/Project.php" />
@@ -44,11 +34,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/exemple/00-simple/vendor/composer/autoload_psr4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/exemple/00-simple/vendor/composer/autoload_real.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exemple/00-simple/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/exemple/00-simple/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_provision" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_provision" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_set_name" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/action_set_name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/creator_uid" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/creator_uid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/id" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/id" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/index_uuid" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/index_uuid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/synced_folders" afterPath="$PROJECT_DIR$/script/vagrant/.vagrant/machines/default/virtualbox/synced_folders" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/vagrant/Vagrantfile" afterPath="$PROJECT_DIR$/script/vagrant/Vagrantfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Action.php" afterPath="$PROJECT_DIR$/source/Action.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/PlayBook/LAMP.php" afterPath="$PROJECT_DIR$/source/Debian/PlayBook/LAMP.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/Role/Apache2.php" afterPath="$PROJECT_DIR$/source/Debian/Role/Apache2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/Role/Essential.php" afterPath="$PROJECT_DIR$/source/Debian/Role/Essential.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/Role/PHP7.php" afterPath="$PROJECT_DIR$/source/Debian/Role/PHP7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/Role/PHP7ModApache.php" afterPath="$PROJECT_DIR$/source/Debian/Role/PHP7ModApache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Debian/Task.php" afterPath="$PROJECT_DIR$/source/Debian/Task.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Exception.php" afterPath="$PROJECT_DIR$/source/Exception.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Group.php" afterPath="$PROJECT_DIR$/source/Group.php" />
@@ -107,46 +105,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toto.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/toto.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PHP7ModApache.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7ModApache.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PHP7.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Role.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/Role.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,7 +118,7 @@
       <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/Project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-668">
+            <state relative-caret-position="16">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
@@ -172,26 +130,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apache2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Debian/Role/Apache2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Essential.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Debian/Role/Essential.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -217,21 +155,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LAMP.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/LAMP.yml">
+      <file leaf-file-name="RawAction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/RawAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Machine.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Machine.php">
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7ModApache/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="64">
+              <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+              <folding>
+                <marker date="1482365706557" expanded="true" signature="181:232" ph="url=https:..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PHP7.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Essential/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -263,7 +233,6 @@
         <option value="$PROJECT_DIR$/source/Debian/Task.php" />
         <option value="$PROJECT_DIR$/source/Debian/Role/HTTPServer.php" />
         <option value="$PROJECT_DIR$/source/Debian/Role/Essential.php" />
-        <option value="$PROJECT_DIR$/source/Debian/Role/PHP7.php" />
         <option value="$PROJECT_DIR$/source/Role.php" />
         <option value="$PROJECT_DIR$/source/Debian/Role/PHP7ModApache.php" />
         <option value="$PROJECT_DIR$/exemple/00-simple/test.php" />
@@ -271,6 +240,9 @@
         <option value="$PROJECT_DIR$/source/Debian/PlayBook/LAMP.php" />
         <option value="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/toto.txt" />
         <option value="$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/source/Debian/Role/PHP7.php" />
+        <option value="$PROJECT_DIR$/source/RawAction.php" />
+        <option value="$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7ModApache/tasks/main.yml" />
       </list>
     </option>
   </component>
@@ -282,8 +254,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1487" />
-    <option name="y" value="542" />
+    <option name="x" value="1063" />
+    <option name="y" value="350" />
     <option name="width" value="2388" />
     <option name="height" value="1211" />
   </component>
@@ -315,7 +287,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -467,6 +439,108 @@
               <option name="myItemId" value="roles" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP7ModApache" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phansible" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phansible" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exemple" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="00-simple" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP7" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phansible" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phansible" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exemple" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="00-simple" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Essential" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phansible" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phansible" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exemple" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="00-simple" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -504,7 +578,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,6 +624,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -587,17 +667,18 @@
       <option name="presentableId" value="Default" />
       <updated>1480945921556</updated>
       <workItem from="1482326297812" duration="9834000" />
+      <workItem from="1482363722674" duration="1072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9834000" />
+    <option name="totallyTimeSpent" value="10906000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1487" y="542" width="2388" height="1211" extended-state="0" />
-    <editor active="false" />
+    <frame x="1063" y="350" width="2388" height="1211" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18006843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18135159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -634,28 +715,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/Recipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/script/vagrant/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,103 +848,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Task.php" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/source/RawAction.php" />
     <entry file="file://$PROJECT_DIR$/script/vagrant/vagrant-initialize">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Debian/Role/BDD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/.yml" />
     <entry file="file://$PROJECT_DIR$/script/vagrant/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/test.yml" />
     <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/hosts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/Apache2.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Playbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Machine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/LAMP.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/Apache2.yml" />
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/defaultRequirements/tasks/main.yml" />
     <entry file="file://$PROJECT_DIR$/source/Recipe.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="724">
@@ -890,63 +881,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Essential/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exemple/00-simple/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Debian/Task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Role.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="28" column="100" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7ModApache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Debian/Role/Essential.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -962,10 +904,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/toto.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/LAMP.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/Debian/Role/Apache2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="336">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Role/BDD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Role/Essential.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Machine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Playbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7ModApache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -978,18 +992,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/toto.txt">
+    <entry file="file://$PROJECT_DIR$/source/Role.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        <state relative-caret-position="308">
+          <caret line="28" column="100" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Apache2/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/source/Project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="16">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/Essential/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemple/00-simple/__project/roles/PHP7ModApache/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <marker date="1482365706557" expanded="true" signature="181:232" ph="url=https:..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/RawAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Debian/Role/PHP7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
           <folding />
         </state>
       </provider>
