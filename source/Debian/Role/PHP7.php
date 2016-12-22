@@ -17,11 +17,20 @@ class PHP7 extends Role
         $rolePHP7=$this;
         $task=$rolePHP7->createTask('main', '\Phansible\Debian\Task');
         $task->createRawAction(
-            'Add repo for PHP7',
+            'Add repo for PHP7 deb',
             '- name: Add repo for PHP7'."\n".
             '  apt_repository: repo="deb http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present',
             true
         );
+
+        $task->createRawAction(
+            'Add repo for PHP7 deb-src',
+            '- name: Add repo for PHP7'."\n".
+            '  apt_repository: repo="deb-src http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present',
+            true
+        );
+
+
         $task->createRawAction(
             'Add apt key for Debian',
 	        '- name: Add apt key for Debian'."\n".
@@ -29,8 +38,73 @@ class PHP7 extends Role
             true
         );
 
+
 	    $task->updateAll();
 	    $task->upgradeAll();
+
+        $task->install('Install PHP7', 'php7.0');
+        $task->install('Install PHP7 dev', 'php7.0-dev');
+
+        $task->install('Install PHP7 Pear', 'php-pear');
+
+
+        $task->createRawAction(
+            'Update pear',
+            '- name: Update pear'."\n".
+            '  command: pecl channel-update pecl.php.net'."\n",
+            true
+        );
+
+
+
+
+
+        $task->install('Install PHP7 mysql', 'php7.0-mysql');
+
+        $task->install('Install PHP7 curl', 'php-curl');
+        $task->install('Install PHP7 json', 'php-json');
+        $task->install('Install PHP7 sqlite3', 'php-sqlite3');
+        $task->install('Image ImageMagic', 'imagemagick');
+        $task->install('Image ImageMagic dev', 'libmagickwand-dev');
+
+
+        $task->install('Install PHP7 ImageMagic', 'php7.0-imagick');
+
+
+
+        //$task->install('Image PHP7 ImageMagic', 'php-imagick');
+
+
+        /*
+        $task->createRawAction(
+            'Install PHP7 ImageMagic',
+            '- name: Install PHP7 ImageMagic'."\n".
+            '  command: pecl install imagick'."\n",
+            true
+        );
+        */
+
+        /*
+        $task->createRawAction(
+            'Enable PHP7 ImageMagic',
+            '- name: Enable PHP7 ImageMagic'."\n".
+            '  shell: " yes \"\" | pecl install imagick"'."\n",
+            true
+        );
+        */
+
+
+
+
+
+
+
+
+
+        //$task->install('Install PHP7', 'php7.0-mysql');
+        //$task->install('Install PHP7', 'php7.0-mysql');
+
+
 
 
 

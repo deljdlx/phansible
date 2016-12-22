@@ -1,6 +1,8 @@
 ---
 - name: Add repo for PHP7
   apt_repository: repo="deb http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present
+- name: Add repo for PHP7
+  apt_repository: repo="deb-src http://packages.dotdeb.org {{ ansible_distribution_release }} all" state=present
 - name: Add apt key for Debian
   apt_key: url=https://www.dotdeb.org/dotdeb.gpg state=present
 - name: apt-update
@@ -14,6 +16,80 @@
 - name: Install PHP7
   become: true
   apt:
+      name: php7.0
+      state: latest
+
+- name: Install PHP7 dev
+  become: true
+  apt:
+      name: php7.0-dev
+      state: latest
+
+- name: Install PHP7 Pear
+  become: true
+  apt:
+      name: php-pear
+      state: latest
+
+- name: Update pear
+  command: pecl channel-update pecl.php.net
+
+- name: Install PHP7 mysql
+  become: true
+  apt:
+      name: php7.0-mysql
+      state: latest
+
+- name: Install PHP7 curl
+  become: true
+  apt:
+      name: php-curl
+      state: latest
+
+- name: Install PHP7 json
+  become: true
+  apt:
+      name: php-json
+      state: latest
+
+- name: Install PHP7 sqlite3
+  become: true
+  apt:
+      name: php-sqlite3
+      state: latest
+
+- name: Image ImageMagic
+  become: true
+  apt:
+      name: imagemagick
+      state: latest
+
+- name: Image ImageMagic dev
+  become: true
+  apt:
+      name: libmagickwand-dev
+      state: latest
+
+- name: Install PHP7 ImageMagic
+  become: true
+  apt:
+      name: php7.0-imagick
+      state: latest
+
+- name: Install PHP7
+  become: true
+  apt:
       name: libapache2-mod-php7.0
       state: latest
+
+- copy:
+    src: /Users/Julien/www/phansible/source/asset/php7/phpinfo.php
+    dest: /var/www/html/phpinfo.php
+    owner: root
+    group: root
+    mode: 0644
+
+- service:
+    name: apache2
+    state: restarted
 

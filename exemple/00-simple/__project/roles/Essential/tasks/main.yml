@@ -12,6 +12,18 @@
       name: vim
       state: latest
 
+- name: Build essential
+  become: true
+  apt:
+      name: build-essential
+      state: latest
+
+- name: Install pkg-config
+  become: true
+  apt:
+      name: pkg-config
+      state: latest
+
 - name: Install wget
   become: true
   apt:

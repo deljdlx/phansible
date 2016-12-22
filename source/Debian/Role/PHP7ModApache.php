@@ -16,6 +16,20 @@ class PHP7ModApache extends PHP7
 
 		$task=$this->getTask('main');
 	    $task->install('Install PHP7', 'libapache2-mod-php7.0');
+        $task->copy(
+            realpath(__DIR__.'/../../asset/php7/phpinfo.php'),
+            '/var/www/html/phpinfo.php'
+        );
+
+
+        $task->createRawAction(
+            'Restart Apache',
+            '- service:'."\n".
+            '    name: apache2'."\n".
+            '    state: restarted'."\n",
+            true
+        );
+
 
 
 

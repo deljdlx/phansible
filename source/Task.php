@@ -33,6 +33,25 @@ class Task
     }
 
 
+    public function copy($source, $destination, $owner='root', $group='root', $mode='0644', $become=false) {
+        $this->createRawAction(
+            'Copying file "'.$source.'" to "'.$destination,
+            '- copy:'."\n".
+            '    src: '.$source.''."\n".
+            '    dest: '.$destination.''."\n".
+            '    owner: '.$owner."\n".
+            '    group: '.$group."\n".
+            '    mode: '.$mode.''."\n",
+            $become
+        );
+
+
+
+
+
+    }
+
+
 
 
 	public function setName($name) {
