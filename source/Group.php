@@ -15,14 +15,19 @@ class Group
 
 
 
-	public function addMachineByIP($ip) {
-
+	public function createMachineByIP($ip) {
 		$machine=new Machine();
 		$machine->setIP($ip);
 
-		$this->machines[]=$machine;
+        $this->addMachine($machine);
+
 		return $machine;
 	}
+
+    public function addMachine($machine) {
+        $this->machines[]=$machine;
+        return $this;
+    }
 
 
 

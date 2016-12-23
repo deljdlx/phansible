@@ -1,13 +1,21 @@
 ---
 # LAMP
 
-- name: LAMP
-  hosts: all
+- name: HTTP
+  hosts: web
   remote_user: vagrant
   become: true
   roles:
     - Essential
+    - PHP7
     - Apache2
-    - PHP7ModApache
-    - BDD
+
+
+- name: BDD
+  hosts: bdd
+  remote_user: vagrant
+  become: true
+  roles:
+    - Essential
+    - MariaDB
 

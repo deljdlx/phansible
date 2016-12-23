@@ -6,8 +6,18 @@ namespace Phansible\Debian\PlayBook;
 
 
 
-class LAMP extends \Phansible\Playbook
+use Phansible\Debian\Role\Traits\Apache2;
+use Phansible\Debian\Role\Traits\Essential;
+use Phansible\Debian\Role\Traits\MariaDB;
+use Phansible\Debian\Role\Traits\PHP7ModApache;
+
+class LAMP extends Minimal
 {
+
+    use Essential;
+    use MariaDB;
+    use Apache2;
+    use PHP7ModApache;
 
 
 
@@ -15,20 +25,40 @@ class LAMP extends \Phansible\Playbook
         parent::__construct($name);
 
 
-        $essentialRole=new \Phansible\Debian\Role\Essential();
-	    $HTTPServer=new \Phansible\Debian\Role\Apache2();
-	    $rolePHP7=new \Phansible\Debian\Role\PHP7ModApache();
-        $roleBDD=new \Phansible\Debian\Role\BDD();
+        /*
+        $essentialRole=$this->buildRoleEssential();
+        $HTTPServer=$this->buildRoleApache2();  //$HTTPServer=new \Phansible\Debian\Role\Apache2();
+	    $rolePHP7=$this->buildRolePHP7ModApache();
+        */
 
 
-        $this->createRecipe('LAMP')
+
+        $httpRecipe=new \Phansible\Debian\Recipe\PHP7ModApache('HTTP');
+        $this->addRecipe($httpRecipe);
+
+
+        $bddRecipe=new \Phansible\Debian\Recipe\MariaDB('BDD');
+        $this->addRecipe($bddRecipe);
+
+
+        /*
+        $recipe0=$this->createRecipe('HTTP')
             ->addRole($essentialRole)
 	        ->addRole($HTTPServer)
             ->addRole($rolePHP7)
+            //->addRole($rolePHP7)
+            //->addRole($roleBDD)
+        ;
+        */
+
+        /*
+         * $roleBDD=$this->buildRoleMariaDB();
+        $recipe1=$this->createRecipe('BDD')
+            ->addRole($essentialRole)
+            //->addRole($HTTPServer)
             ->addRole($roleBDD)
         ;
-
-
+        */
 
 
     }

@@ -14,7 +14,7 @@ class Recipe
 	protected $description='Playbook without description';
 
 
-	protected $networks=array();
+	protected $groups=array();
 	protected $roles=array();
 
 
@@ -25,8 +25,8 @@ class Recipe
 
 
 
-	public function __construct() {
-
+	public function __construct($name='Unamed Recipe') {
+        $this->setName($name);
 	}
 
 
@@ -44,8 +44,8 @@ class Recipe
 	}
 
 
-	public function addNetwork(Network $network) {
-		$this->networks[$network->getName()]=$network;
+	public function addGroup(Group $group) {
+		$this->groups[$group->getName()]=$group;
 		return $this;
 	}
 
@@ -70,11 +70,19 @@ class Recipe
 			$become='false';
 		}
 
+        if(count($this->groups)) {
+            $groupList=array_keys($this->groups);
+            $groups=implode(',', $groupList);
+        }
+        else {
+            $groups='all';
+        }
+
 
 
 		$buffer='
 - name: '.$this->getName().'
-  hosts: all
+  hosts: '.$groups.'
   remote_user: '.$remoteUser.'
   become: '.$become.'
   roles:

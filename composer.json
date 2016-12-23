@@ -3,7 +3,8 @@
   "description": "PHP abstraction for Ansible",
   "require":
   {
-    "symfony/yaml": "dev-master"
+    "symfony/yaml": "dev-master",
+	"mustache/mustache": "dev-master"
   },
   "autoload": {
     "psr-4": { "Phansible\\": ["source"] }

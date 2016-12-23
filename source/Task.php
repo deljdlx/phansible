@@ -44,11 +44,16 @@ class Task
             '    mode: '.$mode.''."\n",
             $become
         );
+    }
 
 
-
-
-
+    public function command($name, $command, $become=false) {
+        return $this->createRawAction(
+            $name,
+            '- name: '.$name."\n".
+            '  command: '.$command.''."\n",
+            $become
+        );
     }
 
 

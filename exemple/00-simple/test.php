@@ -3,25 +3,50 @@
 
 //ansible-playbook --private-key=/cygdrive/d/vm/vagrant/test-00/.vagrant/machines/default/virtualbox/private_key -u vagrant -i hosts test.yml
 
-require(__DIR__.'/vendor/autoload.php');
+require(__DIR__.'/../../vendor/autoload.php');
 
 
+
+
+
+
+$machineHTTP=new \Phansible\VagrantMachine();
+$machineHTTP->setIp('192.168.180.151');
+$machineHTTP->create(__DIR__.'/machine/http');
+$machineHTTP->setSSHKeyFile(__DIR__.'/machine/http/.vagrant/machines/default/virtualbox/private_key');
 
 
 $project=new \Phansible\Project(__DIR__.'/__project');
 
-$project->createGroup('web')
+
+$groupHTTP=$project->createGroup('web');
+$groupHTTP->addMachine($machineHTTP);
 
 
-    ->addMachineByIP('192.168.180.150')
+
+
+$machineBDD=new \Phansible\VagrantMachine();
+$machineBDD->setIp('192.168.180.152');
+$machineBDD->create(__DIR__.'/machine/bdd');
+$machineBDD->setSSHKeyFile(__DIR__.'/machine/bdd/.vagrant/machines/default/virtualbox/private_key');
+
+
+
+$groupBDD=$project->createGroup('bdd');
+$groupBDD->addMachine($machineBDD);
+
+
+
+/*
+$group->createMachineByIP('192.168.180.150')
         ->setSSHKeyFile('/Users/Julien/www/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key')
-
     //->addMachineByIP('192.168.1.89')
         //->setSSHKeyFile('/cygdrive/e/shared/var/www/project/phansible/script/vagrant/.vagrant/machines/default/virtualbox/private_key')
 
 	//->addMachineByIP('192.168.1.94')
 	//->addMachineByIP('192.168.1.33')
 ;
+*/
 
 
 
@@ -29,6 +54,16 @@ $project->createGroup('web')
 
 $playbook=new \Phansible\Debian\PlayBook\LAMP();
 
+
+$httpRecipe=$playbook->getRecipeByName('HTTP');
+$httpRecipe->addGroup($groupHTTP);
+
+$bddRecipe=$playbook->getRecipeByName('BDD');
+$bddRecipe->addGroup($groupBDD);
+
+$project->addPlayBook($playbook);
+
+$project->create();
 
 
 /*
@@ -40,17 +75,16 @@ $playbook->createRecipe('default configuration')
 */
 
 
-$project->addPlayBook($playbook);
-
-$project->create();
 
 
 
+echo "\n";
+
+exit();
 
 
 
-
-die('EXIT '.__FILE__.'@'.__LINE__);
+//die('EXIT '.__FILE__.'@'.__LINE__);
 
 
 

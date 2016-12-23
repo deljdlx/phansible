@@ -41,12 +41,6 @@ class Machine
 
 
 
-    public function createVagrantProject() {
-
-    }
-
-
-
 	public function toString() {
 
         $parameters=$this->getParameters();
