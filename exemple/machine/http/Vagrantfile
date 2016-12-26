@@ -46,8 +46,8 @@ config.vm.network "public_network"
 # config.vm.synced_folder "../data", "/vagrant_data"
 
 
-config.vm.synced_folder "E:/shared/var/www/project/phansible/exemple/00-simple/shared", "/shared",
-    id: "15dbcf365b84e5ad0d648217a71d339a32cde5b4"
+config.vm.synced_folder "E:/shared/var/www/project/phansible/exemple/__shared", "/shared",
+    id: "f3d3686f3c58e25ad1228cc52e7dca0395de905d"
 
 
 
