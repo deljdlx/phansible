@@ -28,8 +28,8 @@ config.vm.box = "debian/jessie64"
 # using a specific IP.
 # config.vm.network "private_network", ip: "192.168.33.10"
 
-config.vm.network "private_network", ip: "192.168.180.151"
 
+config.vm.network "public_network"
 #config.vm.network "public_network"
 
 
@@ -44,6 +44,12 @@ config.vm.network "private_network", ip: "192.168.180.151"
 # the path on the guest to mount the folder. And the optional third
 # argument is a set of non-required options.
 # config.vm.synced_folder "../data", "/vagrant_data"
+
+
+config.vm.synced_folder "E:/shared/var/www/project/phansible/exemple/00-simple/shared", "/shared",
+    id: "15dbcf365b84e5ad0d648217a71d339a32cde5b4"
+
+
 
 # Provider-specific configuration so you can fine-tune various
 # backing providers for Vagrant. These expose provider-specific options.

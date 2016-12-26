@@ -9,14 +9,31 @@ require(__DIR__.'/../../vendor/autoload.php');
 
 
 
+//echo gethostname();
+
 
 $machineHTTP=new \Phansible\VagrantMachine();
-$machineHTTP->setIp('192.168.180.151');
+
+//$machineHTTP->setIp('192.168.1.251');
+
+$machineHTTP->setPublic(true);
+
+
+//system ('vagrant ssh -c "hostname -I | cut -d' ' -f2" 2>/dev/null');
+//die('EXIT '.__FILE__.'@'.__LINE__);
+//$machineHTTP->setIp('192.168.1.151');
+
+
+
+
+
 $machineHTTP->create(__DIR__.'/machine/http');
 $machineHTTP->setSSHKeyFile(__DIR__.'/machine/http/.vagrant/machines/default/virtualbox/private_key');
 
 
 $project=new \Phansible\Project(__DIR__.'/__project');
+
+
 
 
 $groupHTTP=$project->createGroup('web');
@@ -26,7 +43,10 @@ $groupHTTP->addMachine($machineHTTP);
 
 
 $machineBDD=new \Phansible\VagrantMachine();
+
 $machineBDD->setIp('192.168.180.152');
+$machineBDD->setPublic();
+
 $machineBDD->create(__DIR__.'/machine/bdd');
 $machineBDD->setSSHKeyFile(__DIR__.'/machine/bdd/.vagrant/machines/default/virtualbox/private_key');
 

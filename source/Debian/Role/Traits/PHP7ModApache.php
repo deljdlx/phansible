@@ -27,10 +27,8 @@ Trait PHP7ModApache
 
         $task=$role->getTask('main');
         $task->install('Install PHP7', 'libapache2-mod-php7.0');
-        $task->copy(
-            realpath(__DIR__.'/../../../asset/php7/phpinfo.php'),
-            '/var/www/html/phpinfo.php'
-        );
+
+
 
 
         $task->createRawAction(
@@ -41,11 +39,26 @@ Trait PHP7ModApache
             true
         );
 
-
         return $role;
+
+    }
+
+
+    public function installPHPInfo($role) {
+
+	    $task=$role->getTask('main');
+
+	    $task->copy(
+		    str_replace('\\', '/', realpath( __DIR__.'/../../../asset/php7/phpinfo.php')),
+		    '/var/www/html/phpinfo.php'
+	    );
+
+
 
 
 
     }
+
+
 }
 

@@ -10,12 +10,30 @@ class VagrantMachine extends Machine
 
     protected $publicNetwork=false;
 
+	protected $sharedFolders=array();
 
 
     public function setPublic($value=true) {
         $this->publicNetwork=$value;
         return $this;
     }
+
+
+
+    public function addSharedFolder($from, $to, $id=null) {
+    	if($id===null) {
+    		$id=sha1($from.$to);
+	    }
+
+    	$this->sharedFolders[$id]=array(
+    		'from'=>$from,
+		    'to'=>$to
+	    );
+	    return $this;
+    }
+
+
+
 
     public function create($filepath) {
         if(!is_dir($filepath)) {
@@ -38,6 +56,23 @@ class VagrantMachine extends Machine
 
         if($this->publicNetwork) {
             $variables['public_network']='config.vm.network "public_network"';
+        }
+
+
+
+
+
+        if(count($this->sharedFolders)) {
+
+        	$sharedFolderBuffer='';
+
+	        foreach ( $this->sharedFolders as $id => $descriptor) {
+		        $sharedFolderBuffer.=
+	        	    'config.vm.synced_folder "'.str_replace('\\', '/', $descriptor['from']).'", "'.$descriptor['to'].'",'."\n".
+		            '    id: "'.$id.'"'."\n"
+		        ;
+        	}
+	        $variables['shared_folder']=$sharedFolderBuffer;
         }
 
 

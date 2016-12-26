@@ -17,6 +17,10 @@ class PHP7ModApache extends PHP7
         parent::__construct($name);
 
         $phpRole=$this->buildRolePHP7ModApache();
+
+
+	    //$this->installPHPInfo($phpRole);
+
         $this->addRole($phpRole);
 
         $apacheRole=$this->buildRoleApache2();
