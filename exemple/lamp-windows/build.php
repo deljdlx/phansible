@@ -27,7 +27,7 @@ $machineBDD->setSSHKeyFile(
 
 
 
-$project=new \Phansible\Project(__DIR__.'/__project');
+$project=new \Phansible\Project(__DIR__.'/ansible');
 
 
 $groupHTTP=$project->createGroup('web');
