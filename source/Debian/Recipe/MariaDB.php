@@ -10,7 +10,7 @@ class MariaDB extends Minimal
 {
 
 
-    use \Phansible\Debian\Role\Traits\MariaDB;
+    use \Phansible\Debian\Role\MariaDB;
 
     public function __construct($name="MariaDB") {
         parent::__construct($name);

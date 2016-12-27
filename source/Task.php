@@ -57,6 +57,16 @@ class Task
     }
 
 
+    public function script($name, $scriptPath, $become=false) {
+        return $this->createRawAction(
+            $name,
+            '- name: '.$name."\n".
+            '  script: '.$scriptPath."\n",
+            true
+        );
+    }
+
+
 
 
 	public function setName($name) {

@@ -49,8 +49,13 @@ class Recipe
 		return $this;
 	}
 
-	public function addRole(Role $role) {
-		$this->roles[$role->getName()]=$role;
+	public function addRole(Role $role, $name=null) {
+
+        if($name===null) {
+            $name=$role->getName();
+        }
+
+		$this->roles[$name]=$role;
 		return $this;
 	}
 

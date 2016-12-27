@@ -6,16 +6,25 @@ namespace Phansible\Debian\Role;
 
 use Phansible\Role;
 
-class Apache2 extends Role
+Trait Apache2
 {
 
 
-    use Traits\Apache2;
 
-	public function __construct($name='Apache2') {
-		parent::__construct($name);
-        $this->buildRoleApache2($this);
-	}
+    public function buildRoleApache2(Role $role=null) {
+
+
+        if($role==null) {
+            $role=new Role('Apache2');
+        }
+        else {
+            $role->setName('Apache2');
+        }
+
+        $task=$role->createTask('main', '\Phansible\Debian\Task');
+        $task->install('Install Apache2', 'apache2');
+        return $role;
+    }
 }
 
 

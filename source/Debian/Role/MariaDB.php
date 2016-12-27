@@ -6,21 +6,24 @@ namespace Phansible\Debian\Role;
 
 use Phansible\Role;
 
-class MariaDB extends Role
+Trait MariaDB
 {
 
 
-    use Traits\MariaDB;
+    public function buildRoleMariaDB(Role $role=null) {
 
-    public function __construct($name='MariaDB') {
 
-        parent::__construct($name);
-        $this->buildRoleMariaDB($this);
+        if($role==null) {
+            $role=new Role('MariaDB');
+        }
+        else {
+            $role->setName('MariaDB');
+        }
 
-        /*
-        $bddTask=$this->createTask('main', '\Phansible\Debian\Task');
+
+        $bddTask=$role->createTask('main', '\Phansible\Debian\Task');
         $bddTask->install('Install MariaDB', 'mariadb-server');
-        */
+        return $role;
     }
 }
 

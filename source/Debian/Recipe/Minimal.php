@@ -5,11 +5,7 @@ namespace Phansible\Debian\Recipe;
 
 
 
-
-use Phansible\Debian\Role\Traits\Apache2;
-use Phansible\Debian\Role\Traits\Essential;
-use Phansible\Debian\Role\Traits\MariaDB;
-use Phansible\Debian\Role\Traits\PHP7ModApache;
+use Phansible\Debian\Role\Essential;
 use Phansible\Recipe;
 
 class Minimal extends Recipe

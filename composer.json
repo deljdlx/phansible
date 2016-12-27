@@ -7,6 +7,7 @@
 	"mustache/mustache": "dev-master"
   },
   "autoload": {
-    "psr-4": { "Phansible\\": ["source"] }
+    "psr-4": { "Phansible\\": ["source"] },
+	"files": ["source/helper/function.php"]
   }
 }

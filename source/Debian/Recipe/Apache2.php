@@ -10,7 +10,7 @@ class Apache2 extends Minimal
 {
 
 
-    use \Phansible\Debian\Role\Traits\Apache2;
+    use \Phansible\Debian\Role\Apache2;
 
     public function __construct($name="Apache2") {
         parent::__construct($name);

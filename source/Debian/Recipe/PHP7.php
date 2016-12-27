@@ -10,7 +10,7 @@ class PHP7 extends Minimal
 {
 
 
-    use \Phansible\Debian\Role\Traits\PHP7;
+    use \Phansible\Debian\Role\PHP7;
 
     public function __construct($name="PHP7") {
         parent::__construct($name);

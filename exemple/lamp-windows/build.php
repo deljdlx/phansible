@@ -1,8 +1,5 @@
 <?php
 
-
-//ansible-playbook --private-key=/cygdrive/d/vm/vagrant/test-00/.vagrant/machines/default/virtualbox/private_key -u vagrant -i hosts test.yml
-
 require(__DIR__.'/../../vendor/autoload.php');
 
 

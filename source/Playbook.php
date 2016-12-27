@@ -29,6 +29,11 @@ class Playbook
         return $this->recipes;
     }
 
+    /**
+     * @param $name
+     * @return Recipe
+     * @throws Exception
+     */
     public function getRecipeByName($name) {
         if(isset($this->recipes[$name])) {
             return $this->recipes[$name];
@@ -37,6 +42,13 @@ class Playbook
             throw new Exception('No recipe with name "'.$name.'"');
         }
     }
+
+    public function addGroupToRecipe(Group $group, $recipeName) {
+        $recipe=$this->getRecipeByName($recipeName);
+        $recipe->addGroup($group);
+        return $this;
+    }
+
 
 
 	public function setName($name) {
@@ -56,10 +68,13 @@ class Playbook
 		return $recipe;
 	}
 
+
     public function addRecipe(Recipe $recipe) {
         $this->recipes[$recipe->getName()]=$recipe;
         return $this;
     }
+
+
 
 
 	public function create($filepath) {

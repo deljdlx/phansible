@@ -10,8 +10,8 @@ class PHP7ModApache extends PHP7
 {
 
 
-    use \Phansible\Debian\Role\Traits\PHP7ModApache;
-    use \Phansible\Debian\Role\Traits\Apache2;
+    use \Phansible\Debian\Role\PHP7ModApache;
+    use \Phansible\Debian\Role\Apache2;
 
     public function __construct($name="PHP7ModApache") {
         parent::__construct($name);
