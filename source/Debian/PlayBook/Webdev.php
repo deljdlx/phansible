@@ -8,13 +8,14 @@ namespace Phansible\Debian\PlayBook;
 
 
 
+use Phansible\Debian\Role\MariaDB;
 use Phansible\Debian\Role\NPM;
 
-class Webdev extends LAMP
+class Webdev extends Minimal
 {
 
     use NPM;
-
+    use MariaDB;
 
 
     public function __construct($name="webdev") {
@@ -22,12 +23,17 @@ class Webdev extends LAMP
 
 
 
-        $HTTPRecipe=$this->getRecipeByName('HTTP');
 
+        $httpRecipe=new \Phansible\Debian\Recipe\PHP7ModApache('HTTP');
+        $this->addRecipe($httpRecipe);
 
         $npmRole=$this->buildRoleNPM();
-        $HTTPRecipe->addRole($npmRole);
+        $mariaRole=$this->buildRoleMariaDB();
 
+
+        $HTTPRecipe=$this->getRecipeByName('HTTP');
+        $HTTPRecipe->addRole($npmRole);
+        $HTTPRecipe->addRole($mariaRole);
 
     }
 

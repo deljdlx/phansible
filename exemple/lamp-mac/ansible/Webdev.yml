@@ -10,13 +10,5 @@
     - PHP7
     - Apache2
     - NPM
-
-
-- name: BDD
-  hosts: bdd
-  remote_user: vagrant
-  become: true
-  roles:
-    - Essential
     - MariaDB
 

@@ -10,6 +10,17 @@ Trait PHP7
 {
 
 
+    public function getPHPExtensions() {
+        return array(
+            'php7.0-mysql',
+            'php-curl',
+            'php-json',
+            'php-sqlite3'
+        );
+    }
+
+
+
     public function buildRolePHP7(Role $role=null) {
 
 
@@ -68,18 +79,21 @@ Trait PHP7
         */
 
 
+        foreach ($this->getPHPExtensions() as $extension) {
+            $task->install('Install PHP extension '.$extension, $extension);
+        }
 
 
-
+        /*
         $task->install('Install PHP7 mysql', 'php7.0-mysql');
-
         $task->install('Install PHP7 curl', 'php-curl');
         $task->install('Install PHP7 json', 'php-json');
         $task->install('Install PHP7 sqlite3', 'php-sqlite3');
+        */
+
+
         $task->install('Image ImageMagic', 'imagemagick');
         $task->install('Image ImageMagic dev', 'libmagickwand-dev');
-
-
         $task->install('Install PHP7 ImageMagic', 'php7.0-imagick');
 
 
@@ -138,16 +152,6 @@ Trait PHP7
         );
         */
 
-
-
-
-
-
-
-
-
-        //$task->install('Install PHP7', 'php7.0-mysql');
-        //$task->install('Install PHP7', 'php7.0-mysql');
 
 
 

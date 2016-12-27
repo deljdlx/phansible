@@ -34,25 +34,25 @@
 - name: Update pear
   command: pecl channel-update pecl.php.net
 
-- name: Install PHP7 mysql
+- name: Install PHP extension php7.0-mysql
   become: true
   apt:
       name: php7.0-mysql
       state: latest
 
-- name: Install PHP7 curl
+- name: Install PHP extension php-curl
   become: true
   apt:
       name: php-curl
       state: latest
 
-- name: Install PHP7 json
+- name: Install PHP extension php-json
   become: true
   apt:
       name: php-json
       state: latest
 
-- name: Install PHP7 sqlite3
+- name: Install PHP extension php-sqlite3
   become: true
   apt:
       name: php-sqlite3

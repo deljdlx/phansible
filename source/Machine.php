@@ -11,8 +11,18 @@ class Machine
 
 
 	protected $ip;
+    protected $name='';
     protected $parameter=array();
 
+
+
+
+    public function __construct($ip=null) {
+
+        if(filter_var($ip, \FILTER_VALIDATE_IP)) {
+            $this->setIp($ip);
+        }
+    }
 
 
     public function getParameters() {
@@ -26,6 +36,7 @@ class Machine
     }
 
     public function setSSHKeyFile($file) {
+        $file=str_replace('\\', '/', $file);
         return $this->setParameter('ansible_ssh_private_key_file', $file);
     }
 
