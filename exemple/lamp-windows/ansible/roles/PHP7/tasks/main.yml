@@ -46,12 +46,6 @@
       name: php-curl
       state: latest
 
-- name: Install PHP extension php-json
-  become: true
-  apt:
-      name: php-json
-      state: latest
-
 - name: Install PHP extension php-sqlite3
   become: true
   apt:
@@ -75,12 +69,6 @@
   apt:
       name: php7.0-imagick
       state: latest
-
-- name: Install PHP Composer
-  script: E:\shared\var\www\project\phansible\source\asset\debian\php7\install-composer.sh
-
-- name: Install PHP phing
-  script: E:\shared\var\www\project\phansible\source\asset\debian\php7\install-phing.sh
 
 - name: Install PHP7
   become: true

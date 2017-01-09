@@ -9,6 +9,7 @@
     - Essential
     - PHP7
     - Apache2
+    - Virtualbox
     - NPM
     - MariaDB
 

@@ -14,8 +14,9 @@ Trait PHP7
         return array(
             'php7.0-mysql',
             'php-curl',
-            'php-json',
-            'php-sqlite3'
+            //'php-json',
+            'php-sqlite3',
+            //'php-memcached'
         );
     }
 
@@ -67,6 +68,7 @@ Trait PHP7
         $task->install('Install PHP7 Pear', 'php-pear');
 
 
+
         $task->command('Update pear', 'pecl channel-update pecl.php.net', true);
 
         /*
@@ -84,21 +86,14 @@ Trait PHP7
         }
 
 
-        /*
-        $task->install('Install PHP7 mysql', 'php7.0-mysql');
-        $task->install('Install PHP7 curl', 'php-curl');
-        $task->install('Install PHP7 json', 'php-json');
-        $task->install('Install PHP7 sqlite3', 'php-sqlite3');
-        */
-
 
         $task->install('Image ImageMagic', 'imagemagick');
         $task->install('Image ImageMagic dev', 'libmagickwand-dev');
         $task->install('Install PHP7 ImageMagic', 'php7.0-imagick');
 
 
-        $composerSH=realpath(__DIR__.'/../../asset/debian/php7/install-composer.sh');
 
+        $composerSH=realpath(__DIR__.'/../../asset/debian/php7/install-composer.sh');
 
         $task->createRawAction(
             'Install PHP Composer',
@@ -107,10 +102,9 @@ Trait PHP7
             true
         );
 
-
-
         $phingSH=realpath(__DIR__.'/../../asset/debian/php7/install-phing.sh');
         $task->script('Install PHP phing', $phingSH, true);
+
 
 
 

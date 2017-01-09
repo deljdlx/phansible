@@ -1,0 +1,21 @@
+---
+- name: Add repo for virtualbox
+  apt_repository: repo="deb http://download.virtualbox.org/virtualbox/debian jessie contrib" state=present
+- name: Add apt key for virtualbox
+  apt_key: url=https://www.virtualbox.org/download/oracle_vbox_2016.asc state=present
+- name: Add apt key for virtualbox
+  apt_key: url=https://www.virtualbox.org/download/oracle_vbox.asc state=present
+- name: apt-update
+  apt:
+      update_cache: 'yes'
+
+- name: apt-upgrade
+  apt:
+      upgrade: dist
+
+- name: Install virtualbox 5.1
+  become: true
+  apt:
+      name: virtualbox-5.1
+      state: latest
+
