@@ -12,12 +12,12 @@ class Apt extends \Phansible\Task
 
 
 
-	public function install($name, $package, $version='latest') {
+	public function install($name, $package, $state='latest') {
 
 		return $this->createAction($name, array(
 			'apt'=>array(
 				'name'=>$package,
-				'state'=>$version
+				'state'=>$state
 			)
 		), true);
 	}

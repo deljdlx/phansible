@@ -1,0 +1,19 @@
+---
+- name: Install Samba
+  become: true
+  apt:
+      name: samba
+      state: latest
+
+- name: Install Samba
+  become: true
+  apt:
+      name: samba-common
+      state: latest
+
+- name: Install Samba
+  become: true
+  apt:
+      name: samba-common-bin
+      state: latest
+
