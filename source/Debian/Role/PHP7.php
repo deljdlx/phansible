@@ -93,7 +93,7 @@ Trait PHP7
 
 
 
-        $composerSH=realpath(__DIR__.'/../../asset/debian/php7/install-composer.sh');
+        $composerSH=realpath(__DIR__.'/../asset/php7/install-composer.sh');
 
         $task->createRawAction(
             'Install PHP Composer',
@@ -102,7 +102,7 @@ Trait PHP7
             true
         );
 
-        $phingSH=realpath(__DIR__.'/../../asset/debian/php7/install-phing.sh');
+        $phingSH=realpath(__DIR__.'/../asset/php7/install-phing.sh');
         $task->script('Install PHP phing', $phingSH, true);
 
 

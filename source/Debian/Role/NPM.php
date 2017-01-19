@@ -20,7 +20,7 @@ Trait NPM
             $role->setName('NPM');
         }
 
-        $npmSH=realpath(__DIR__.'/../../asset/debian/install-npm.sh');
+        $npmSH=realpath(__DIR__.'/../asset/install-npm.sh');
 
         $npmTask=$role->createTask('main', '\Phansible\Debian\Task');
         $npmTask->script('Install npm', $npmSH);

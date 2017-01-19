@@ -9,54 +9,49 @@ use Phansible\Role;
 Trait PHP7ModApache
 {
 
-
     use PHP7;
 
-    public function buildRolePHP7ModApache(Role $role=null) {
+    public function buildRolePHP7ModApache(Role $role = null)
+    {
 
 
-        if($role==null) {
-            $role=new Role('PHP7ModApache');
-        }
-        else {
+        if ($role == null) {
+            $role = new Role('PHP7ModApache');
+        } else {
             $role->setName('PHP7ModApache');
         }
 
         $this->buildRolePHP7($role);
 
 
-        $task=$role->getTask('main');
+        $task = $role->getTask('main');
         $task->install('Install PHP7', 'libapache2-mod-php7.0');
-
-
 
 
         $task->createRawAction(
             'Restart Apache',
-            '- service:'."\n".
-            '    name: apache2'."\n".
-            '    state: restarted'."\n",
+            '- service:' . "\n" .
+            '    name: apache2' . "\n" .
+            '    state: restarted' . "\n",
             true
         );
+
+        $this->installPHPInfo($role);
 
         return $role;
 
     }
 
 
-    public function installPHPInfo($role) {
+    public function installPHPInfo($role, $taskName = 'main')
+    {
 
-	    $task=$role->getTask('main');
+        $task = $role->getTask($taskName);
 
-	    $task->copy(
-		    str_replace('\\', '/', realpath( __DIR__.'/../../../asset/debian/php7/phpinfo.php')),
-		    '/var/www/html/phpinfo.php'
-	    );
-
-
-
-
-
+        $task->copy(
+            realpath(__DIR__ . '/../asset/php7/phpinfo.php'),
+            '/var/www/html/phpinfo.php'
+        );
     }
 
 

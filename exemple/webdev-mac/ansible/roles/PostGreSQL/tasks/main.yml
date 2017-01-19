@@ -1,0 +1,13 @@
+---
+- name: Install PostGreSQL
+  become: true
+  apt:
+      name: postgresql-9.4
+      state: latest
+
+- name: Install PostGreSQL
+  become: true
+  apt:
+      name: postgresql-client-9.4
+      state: latest
+

@@ -43,7 +43,7 @@ class Playbook
         }
     }
 
-    public function addGroupToRecipe(Group $group, $recipeName) {
+    public function addGroupToRecipe($recipeName, Group $group) {
         $recipe=$this->getRecipeByName($recipeName);
         $recipe->addGroup($group);
         return $this;

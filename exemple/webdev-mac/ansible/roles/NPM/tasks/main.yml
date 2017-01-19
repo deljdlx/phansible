@@ -1,0 +1,4 @@
+---
+- name: Install npm
+  script: /Users/Julien/www/phansible/source/Debian/asset/install-npm.sh
+

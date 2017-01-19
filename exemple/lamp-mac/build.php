@@ -48,8 +48,8 @@ $project=new \Phansible\Project(__DIR__.'/ansible');
 
 $playbook=new \Phansible\Debian\PlayBook\Webdev();
 {
-    $playbook->addGroupToRecipe($groupHTTP, 'HTTP');
-    //$playbook->addGroupToRecipe($groupBDD, 'BDD');
+    $playbook->addGroupToRecipe('HTTP', $groupHTTP);
+    //$playbook->addGroupToRecipe('BDD', $groupBDD);
 }
 
 
