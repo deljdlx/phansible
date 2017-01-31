@@ -1,2 +1,2 @@
-[WebDev]
+[Webdev]
 192.168.180.200	ansible_ssh_private_key_file=/Users/Julien/www/phansible/exemple/machine/mac/http/.vagrant/machines/default/virtualbox/private_key 

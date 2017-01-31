@@ -5,10 +5,7 @@ namespace Phansible\Debian\PlayBook;
 
 
 use Phansible\Debian\Role\Bower;
-use Phansible\Debian\Role\Git;
-use Phansible\Debian\Role\MariaDB;
 use Phansible\Debian\Role\NPM;
-use Phansible\Debian\Role\PostGreSQL;
 use Phansible\Debian\Role\Webpack;
 
 
@@ -16,9 +13,6 @@ class WebBuild extends Minimal
 {
 
     use NPM;
-    use MariaDB;
-    use PostGreSQL;
-    use Git;
     use Webpack;
     use  Bower;
 

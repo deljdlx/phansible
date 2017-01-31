@@ -13,7 +13,7 @@
 
 
 - name: HTTP
-  hosts: WebDev
+  hosts: Webdev
   remote_user: vagrant
   become: true
   roles:

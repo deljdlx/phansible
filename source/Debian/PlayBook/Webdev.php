@@ -27,13 +27,13 @@ class Webdev extends WebBuild
         $this->addRecipe($httpRecipe);
 
         $mariaRole = $this->buildRoleMariaDB();
+        $httpRecipe->addRole($mariaRole);
+
+
         $postGreSQLRole = $this->buildRolePostGreSQL();
+        $httpRecipe->addRole($postGreSQLRole);
 
         $gitRole = $this->buildRoleGit();
-
-
-        $httpRecipe->addRole($mariaRole);
-        $httpRecipe->addRole($postGreSQLRole);
         $httpRecipe->addRole($gitRole);
 
 
