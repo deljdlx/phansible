@@ -25,7 +25,7 @@ class Recipe
 
 
 
-	public function __construct($name='Unamed Recipe') {
+	public function __construct($name='unamed') {
         $this->setName($name);
 	}
 

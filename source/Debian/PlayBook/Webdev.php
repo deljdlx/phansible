@@ -19,11 +19,11 @@ class Webdev extends WebBuild
 
 
 
-    public function __construct($name = "Webdev")
+    public function __construct($name = "webdev")
     {
         parent::__construct($name);
 
-        $httpRecipe = new \Phansible\Debian\Recipe\PHP7ModApache('HTTP');
+        $httpRecipe = new \Phansible\Debian\Recipe\PHP7ModApache('webdev');
         $this->addRecipe($httpRecipe);
 
         $mariaRole = $this->buildRoleMariaDB();

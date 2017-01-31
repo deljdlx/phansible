@@ -18,10 +18,10 @@ class WebBuild extends Minimal
 
 
 
-    public function __construct($name = "WebBuild")
+    public function __construct($name = "webbuild")
     {
         parent::__construct($name);
-        $recipe=$this->getRecipeByName('Minimal');
+        $recipe=$this->getRecipeByName('minimal');
 
 
         $npmRole = $this->buildRoleNPM();
