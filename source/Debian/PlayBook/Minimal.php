@@ -16,9 +16,10 @@ class Minimal extends \Phansible\Playbook
 
 
 
-    public function __construct($name="LAMP") {
+    public function __construct($name="Minimal") {
         parent::__construct($name);
-        $this->buildRoleEssential();
+        $recipe=new \Phansible\Debian\Recipe\Minimal();
+        $this->addRecipe($recipe);
 
     }
 

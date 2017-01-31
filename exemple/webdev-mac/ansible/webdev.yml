@@ -1,15 +1,25 @@
 ---
-# webdev
+# Webdev
+
+- name: Minimal
+  hosts: all
+  remote_user: vagrant
+  become: true
+  roles:
+    - Essential
+    - NPM
+    - webpack
+    - bower
+
 
 - name: HTTP
-  hosts: webdev
+  hosts: WebDev
   remote_user: vagrant
   become: true
   roles:
     - Essential
     - PHP7
     - Apache2
-    - NPM
     - MariaDB
     - PostGreSQL
     - Git

@@ -22,16 +22,15 @@ require(__DIR__ . '/../../vendor/autoload.php');
 $project = new \Phansible\Project(__DIR__ . '/ansible');
 
     {
-        $groupWebdev = $project->createGroup('webdev');
+        $groupWebdev = $project->createGroup('WebDev');
         $groupWebdev->addMachine($webdevMachine);
     }
 
 
-$playbook = new \Phansible\Debian\PlayBook\Webdev();
-    {
-        $playbook->addGroupToRecipe('HTTP', $groupWebdev);
+$playbook = new \Phansible\Debian\PlayBook\WebDev();
 
-    }
+
+$playbook->addGroupToRecipe('HTTP', $groupWebdev);
 
 
 $project->addPlayBook($playbook);

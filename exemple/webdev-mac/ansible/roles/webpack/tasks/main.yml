@@ -1,0 +1,4 @@
+---
+- name: Install webpack
+  command: npm install -g webpack --save-dev
+

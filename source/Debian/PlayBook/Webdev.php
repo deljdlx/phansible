@@ -6,38 +6,36 @@ namespace Phansible\Debian\PlayBook;
 
 use Phansible\Debian\Role\Git;
 use Phansible\Debian\Role\MariaDB;
-use Phansible\Debian\Role\NPM;
 use Phansible\Debian\Role\PostGreSQL;
 
 
-class Webdev extends Minimal
+
+class Webdev extends WebBuild
 {
 
-    use NPM;
     use MariaDB;
     use PostGreSQL;
     use Git;
 
 
 
-    public function __construct($name = "webdev")
+    public function __construct($name = "Webdev")
     {
         parent::__construct($name);
 
         $httpRecipe = new \Phansible\Debian\Recipe\PHP7ModApache('HTTP');
         $this->addRecipe($httpRecipe);
 
-        $npmRole = $this->buildRoleNPM();
         $mariaRole = $this->buildRoleMariaDB();
         $postGreSQLRole = $this->buildRolePostGreSQL();
 
         $gitRole = $this->buildRoleGit();
 
 
-        $httpRecipe->addRole($npmRole);
         $httpRecipe->addRole($mariaRole);
         $httpRecipe->addRole($postGreSQLRole);
         $httpRecipe->addRole($gitRole);
+
 
     }
 
