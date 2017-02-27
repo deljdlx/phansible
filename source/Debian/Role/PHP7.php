@@ -12,6 +12,7 @@ Trait PHP7
 
     public function getPHPExtensions() {
         return array(
+			'php7.0-dev',
             'php7.0-mysql',
             'php-curl',
             //'php-json',
